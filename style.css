@@ -1,0 +1,169 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+/* Container styling */
+#container {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    min-height: 480px;
+    margin: 1rem auto;
+    padding: 1.5rem;
+}
+
+/* Header styling */
+h1 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Input area styling */
+#inp {
+    width: 100%;
+    max-width: 500px;
+    font-size: 1.1rem;
+    padding: 0.8rem 1rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto 1rem 30%;
+    transition: border-color 0.2s ease;
+}
+
+#inp:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+/* Add button styling */
+#plus {
+    text-align: center;
+    background-color: #3498db;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    right: calc(48% - 250px);
+    margin-top: -60px;
+    transition: transform 0.2s ease;
+    padding-bottom: 8px;
+}
+
+#plus:hover {
+    transform: scale(1.1);
+    background-color: #2980b9;
+}
+
+/* Task list styling */
+ul {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+li {
+    background-color: #f8f9fa;
+    font-size: 1.1rem;
+    padding: 1rem 1.2rem;
+    margin-bottom: 0.8rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    border-left: 4px solid #3498db;
+}
+
+li:hover {
+    background-color: #edf2f7;
+    transform: translateX(4px);
+}
+
+/* Completed task styling */
+.completed {
+    text-decoration: line-through;
+    color: #888;
+    border-left-color: #27ae60;
+    background-color: #f0f0f0;
+}
+
+/* Button styling */
+#bt1, #bt2 {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+
+#bt1 {
+    float: left;
+}
+
+#bt2 {
+    float: right;
+}
+
+#bt1:hover, #bt2:hover {
+    background-color: #2980b9;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    #container {
+        margin: 0.5rem auto;
+    }
+    
+    #inp {
+        max-width: 100%;
+    }
+    
+    #plus {
+        right: 1rem;
+    }
+}
+
+.lol{
+    text-decoration: line-through;
+}
+
+
+
+
+
+
+
