@@ -17,9 +17,9 @@ $('#plus').click(function(){
     $('input').val('');
 })
 
-$('li').click(function(){
+$('#list').on('click', 'li', function () {
     $(this).toggleClass('lol');
-})
+});
 
 $('#bt1').click(function(){
     $('li').remove();
